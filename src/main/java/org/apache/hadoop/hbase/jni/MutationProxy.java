@@ -60,7 +60,7 @@ public abstract class MutationProxy extends RowProxy {
   }
 
   public void setDurability(final int durability) {
-    this.durability_ = Durability.valueOf(durability);
+    this.durability_ = Durability.values()[durability];
   }
 
   public boolean isBufferable() {
